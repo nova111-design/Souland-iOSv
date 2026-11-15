@@ -1,0 +1,23 @@
+name: SoulandIOS
+options:
+  bundleIdPrefix: net.souland
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: '16.0'
+    SWIFT_VERSION: '5.0'
+    TARGETED_DEVICE_FAMILY: '1'
+targets:
+  SoulandIOS:
+    type: application
+    platform: iOS
+    sources: [SoulandApp]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: net.souland.mobile
+        INFOPLIST_KEY_CFBundleDisplayName: Souland.net
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        CODE_SIGN_STYLE: Manual
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
